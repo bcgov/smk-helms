@@ -15,7 +15,7 @@ rules:
   - apiGroups:
       - apps.openshift.io
     resources:
-      - deploymentconfigs
+      - deployments
     verbs:
       - get
       - list
@@ -75,7 +75,7 @@ rules:
   - apiGroups:
       - apps.openshift.io
     resources:
-      - deploymentconfigs
+      - deployments
     verbs:
       - create
       - delete
