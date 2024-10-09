@@ -67,6 +67,7 @@ rules:
       - apps.openshift.io
     resources:
       - deployments
+      - deploymentconfigs
     verbs:
       - create
       - delete
