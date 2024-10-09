@@ -25,6 +25,11 @@ app_name: smkapp
 web_role: web
 env: dev
 
+github_actions_sa:
+  name: gha-sa
+  role_name: gha-sa-role
+  role_binding_name: gha-sa-rolebinding
+
 app_port: 8888
 
 # Values that should be overriden:
