@@ -36,7 +36,7 @@ spec:
         role: {{ .Values.web_role }}
         app: {{ .Values.app_name }}
         env: {{ .Values.env }}
-        deploymentconfig: {{ .Values.app_name }}-dp
+        deployment: {{ .Values.app_name }}-dp
     spec:
       imagePullSecrets:
         - name: {{ .Values.app_image_pull_secret_params.name }}
