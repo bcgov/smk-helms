@@ -64,7 +64,7 @@ rules:
       - patch
       - update
   - apiGroups:
-      - apps.openshift.io
+      - apps
     resources:
       - deployments
     verbs:

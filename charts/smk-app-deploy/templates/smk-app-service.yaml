@@ -6,7 +6,7 @@ metadata:
   labels:
     app: {{ .Values.app_name }}
     role: {{ .Values.web_role }}
-    deploymentconfig: {{ .Values.app_name }}-dp
+    deployment: {{ .Values.app_name }}-dp
     service: {{ .Values.app_name }}-svc
     env: {{ .Values.env }}
   name: {{ .Values.app_name }}-svc
@@ -17,7 +17,7 @@ spec:
       protocol: TCP
       targetPort: {{ .Values.app_port }}
   selector:
-    deploymentconfig: {{ .Values.app_name }}-dp
+    deployment: {{ .Values.app_name }}-dp
     role: {{ .Values.web_role }}
     app: {{ .Values.app_name }}
     env: {{ .Values.env }}
