@@ -1,0 +1,6 @@
+smk-app-deploy:
+  ns: b16795-dev
+  env: dev
+
+  deployment:
+    replicas: 1

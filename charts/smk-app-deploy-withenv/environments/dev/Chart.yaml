@@ -1,0 +1,10 @@
+apiVersion: v2
+name: smk-app-deploy-dev
+description: A Helm chart for deploying smk-helms to dev
+type: application
+version: 0.2.2
+appVersion: "1.16.0"
+dependencies:
+  - name: smk-app-deploy
+    repository: file://../../
+    version: 0.2.2
